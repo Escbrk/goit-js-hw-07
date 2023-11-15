@@ -22,15 +22,9 @@ const imageEL = galleryItems
   .join("");
 
 gallery.innerHTML = imageEL;
-
-gallery.addEventListener("click", onClick);
-
-function onClick(event) {
-  event.preventDefault();
   let lightbox = new SimpleLightbox(".gallery a", {
     captions: true,
     captionDelay: 250,
     captionType: "attr",
     captionsData: "alt",
   });
-}
