@@ -33,7 +33,6 @@ const escClose = (event) => {
     
   if (event.code === "Escape") {
     instance.close();
-    document.removeEventListener("keydown", escClose);
   }
 };
 
